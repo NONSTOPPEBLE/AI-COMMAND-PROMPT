@@ -148,7 +148,7 @@ Try the live demo at:
 📍 Dang, Gujarat, India  
 📧 Email: `vatsalgame28@gmail.com`  
 🔗 LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)  
-🐙 GitHub: [@your-username](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT)
+🐙 GitHub: [@AI-COMMAND-PROMPT](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT)
 
 ---
 
