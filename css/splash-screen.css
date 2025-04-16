@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+    font-family: Arial, sans-serif;
+    color: white; /* White text */
+    overflow: hidden; /* Hide overflow for smooth effect */
+}
+
+.splash-container {
+    text-align: center;
+}
+
+.project-text {
+    font-size: 56px; /* Larger size for "A project" */
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.5); /* Start small */
+    animation: zoomIn 1.5s ease-out forwards, fadeOut 1s 3s ease-in forwards; /* Zoom and fade */
+}
+
+.author-text {
+    font-size: 36px; /* Perfect size for "By Vatsal Gavit" */
+    font-weight: normal;
+    opacity: 0;
+    transform: scale(0.5); /* Start small */
+    animation: zoomIn 1.5s 1.7s ease-out forwards; /* Zoom in after 4 seconds */
+    margin-top: 20px; /* Space between the texts */
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Start smaller */
+    }
+    50% {
+        opacity: 0.7; /* Midway opacity */
+        transform: scale(1.1); /* Slightly bigger */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* End at normal size */
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5); /* Shrink and fade out */
+    }
+}

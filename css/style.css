@@ -1,0 +1,568 @@
+ /*
+        * Core Styles
+        * -----------------------------------------------------------------------------
+        * Resets, font, and base layout for the application.  Ensures consistency.
+        */
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a; /* Dark background */
+            color: #f8fafc;         /* Light text */
+            line-height: 1.6;
+            overflow-x: hidden;      /* Prevent horizontal scrollbar */
+        }
+
+        /*
+        * Header Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the application header.
+        */
+
+        header {
+            background: linear-gradient(to right, #6441ff, #39c6ff); /* Gradient background */
+            color: #fff;
+            padding: 0rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            animation: fadeInHeader 1s ease-out; /* Removed pulseHeader */
+        }
+
+        @keyframes fadeInHeader {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        /*
+        * Main Content Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the main content area.
+        */
+
+        main {
+            max-width: 80%;
+            margin: 3rem auto;
+            padding: 1rem;
+            background-color: #1e293b; /* Dark container background */
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+            transition:  box-shadow 0.2s ease;
+            animation: fadeInMain 1s ease-out; /* Removed tiltMain */
+        }
+
+        @keyframes fadeInMain {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+        /*
+        * Heading Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the main heading.
+        */
+
+        h1 {
+            color: #fff;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #4a148c, #00b0ff);
+            -webkit-background-clip: text;
+            
+            animation: none; /* Removed pulseHeading */
+        }
+
+
+        /*
+        * Chat Container Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the chat message area. Includes scrollbar styling.
+        */
+
+        #chat-container {
+            border: 1px solid #4a5568;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            background-color: #2d3748;
+            padding: 1rem;
+            height: 200px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            position: relative;
+            scrollbar-width: thin;
+            scrollbar-color: #718096 #2d3748;
+        }
+
+        /* Webkit scrollbar styles (Chrome, Safari, Edge) */
+        #chat-container::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        #chat-container::-webkit-scrollbar-track {
+            background: #2d3748;
+            border-radius: 10px;
+        }
+
+        #chat-container::-webkit-scrollbar-thumb {
+            background-color: #718096;
+            border-radius: 10px;
+            border: 3px solid #2d3748;
+        }
+
+        #chat-container::-webkit-scrollbar-thumb:hover {
+            background-color: #9ca3af;
+        }
+
+        /*
+        * Message Styles
+        * -----------------------------------------------------------------------------
+        * Styles for individual chat messages.
+        */
+
+        .message {
+            padding: 1.25rem 2rem;
+            margin-bottom: 1.5rem;
+            border-radius: 24px;
+            max-width: 85%;
+            clear: both;
+            opacity: 0;
+            animation: fadeIn 0.3s ease-out forwards, slideIn 0.5s ease-out;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+          from { transform: translateX(-20px); }
+          to { transform: translateX(0); }
+        }
+
+        .user-message {
+            background: linear-gradient(to right, #a855f7, #f9a8d4);
+            color: #fff;
+            align-self: flex-end;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation-delay: 0.2s;
+        }
+
+        .system-message {
+            background: linear-gradient(to right, #2075fd, #22e9c8);
+            color: #fff;
+            align-self: flex-start;
+            border-bottom-left-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            animation-delay: 0.2s;
+        }
+
+        /*
+        * Input Container Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the message input area.
+        */
+
+        #input-container {
+            display: flex;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        #message-input {
+            flex: 1;
+            padding: 1.25rem;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            margin-right: 0;
+            font-size: 1.1rem;
+            border-right: none;
+            background-color: #374151;
+            color: #f7fafc;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            animation-delay: 0.4s;
+        }
+
+        #message-input:focus {
+            outline: none;
+            border-color: #93c5fd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            animation: pulseInput 2s infinite alternate;
+        }
+
+        @keyframes pulseInput {
+          from { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+          to { box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); }
+        }
+
+        #send-button {
+            background: linear-gradient(to right, #f472b6, #8b5cf6);
+            color: #fff;
+            padding: 1.25rem 2.25rem;
+            border: none;
+            border-radius: 0 30px 30px 0;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease,  box-shadow 0.2s ease;
+            border-left: none;
+            animation: none; /* Removed tiltButton */
+        }
+
+
+        #send-button:active {
+            background-color: #d946ef;
+            transform: translateY(0);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /*
+        * Footer Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the application footer.
+        */
+
+        footer {
+            background-color: #1e293b;
+            color: #f7fafc;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid #4a5568;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+            animation: fadeInFooter 1s ease-out, slideInFooter 1s ease-out;
+        }
+
+        @keyframes fadeInFooter {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideInFooter {
+          from { transform: translateX(50px); }
+          to { transform: translateX(0); }
+        }
+
+        /*
+        * Responsive Styles
+        * -----------------------------------------------------------------------------
+        * Adjustments for smaller screens.
+        */
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1.5rem;
+                max-width: 95%;
+            }
+
+            .message {
+                max-width: 95%;
+                border-radius: 16px;
+            }
+
+            #input-container {
+                flex-direction: column;
+            }
+
+            #message-input {
+                border-radius: 16px 16px 0 0;
+                margin-right: 0;
+                border-right: 1px solid #6b7280;
+            }
+
+            #send-button {
+                border-radius: 0 0 16px 16px;
+                border-left: 1px solid #6b7280;
+            }
+        }
+
+        /*
+        * Typing Indicator Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the typing animation.
+        */
+
+        .typing-indicator {
+            display: inline-flex;
+            margin-left: 5px;
+        }
+
+        .typing-indicator span {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #93c5fd;
+            margin: 0 3px;
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        /*
+        * Settings Panel Styles
+        * -----------------------------------------------------------------------------
+        * Styles for the settings panel and its elements.
+        */
+
+        #settings-button {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            padding: 0.75rem;
+            border-radius: 12px;
+            background-color: #4a5568;
+            color: #f7fafc;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease,  box-shadow 0.2s ease;
+            z-index: 11;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: none;
+            animation: pulseSettingsButton 2s infinite alternate; /* Kept pulseSettingsButton animation*/
+        }
+
+        @keyframes pulseSettingsButton {
+          from { transform: rotate(0deg) scale(1); }
+          to { transform: rotate(5deg) scale(1.08); }
+        }
+
+        #settings-panel {
+            position: absolute;
+            top: 4rem;
+            right: 1.5rem;
+            background-color: #2d3748;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            z-index: 12;
+            width: 300px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            transform: translateY(-10px);
+            animation: slideInSettings 0.3s ease-out;
+        }
+
+        @keyframes slideInSettings {
+          from { transform: translateX(30px); opacity: 0; }
+          to { transform: translateX(0); opacity: 1; }
+        }
+
+        #settings-panel.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        #settings-panel h2 {
+            color: #f7fafc;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-bottom: 2px solid #6b7280;
+            padding-bottom: 0.5rem;
+        }
+
+        .setting-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .setting-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #cbd5e0;
+            font-weight: 500;
+            font-size: 1rem;
+            transition:  color 0.3s ease;
+        }
+
+        .setting-group label:hover {
+          color: #f5f5f5;
+        }
+
+        .setting-group input, .setting-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid #6b7280;
+            background-color: #374151;
+            color: #f7fafc;
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+            outline: none;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .setting-group input:focus, .setting-group select:focus {
+            border-color: #93c5fd;
+            box-shadow: 0 0 0 3px rgba(147, 197, 253, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #save-settings-button {
+            background: linear-gradient(to right, #6ee7b7, #3b82f6);
+            color: #0f172a;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease,  box-shadow 0.2s ease;
+            width: 100%;
+            display: block;
+            margin-top: 0.5rem;
+            animation: pulseSaveButton 2s infinite alternate;
+        }
+        @keyframes pulseSaveButton {
+          from { transform: scale(1); }
+          to { transform: scale(1.06); }
+        }
+
+        #clear-chat-button {
+            background-color: #ef4444;
+            color: #f7fafc;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease,  transform 0.1s ease;
+            width: 100%;
+            display: block;
+            margin-top: 1.5rem;
+            animation: pulseClearButton 2s infinite alternate;
+        }
+        @keyframes pulseClearButton {
+          from{ background-color: #ef4444; transform: scale(1); }
+          to { background-color: #dc2626; transform: scale(1.05); }
+        }
+
+        /* Message Actions Styles */
+        .message-actions {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.2s ease,  transform 0.2s ease;
+            margin-top: 0.5rem;
+            animation: fadeInMessageActions 0.3s ease;
+        }
+
+        @keyframes fadeInMessageActions {
+          from { opacity: 0; transform: translateX(-10px); }
+          to { opacity: 1; transform: translateX(0); }
+        }
+
+        .message:hover .message-actions {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .message-action-button {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease,  box-shadow 0.2s ease;
+            color: #f7fafc;
+            animation: pulseActionButton 1.5s infinite alternate; /* Kept pulseActionButton */
+        }
+        @keyframes pulseActionButton {
+          from { transform: scale(1); }
+          to { transform: scale(1.2); }
+        }
+
+        .message-action-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .edit-icon {
+            /* Replace with your edit icon SVG or use a library like Font Awesome */
+            width: 1rem;
+            height: 1rem;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .delete-icon {
+            /* Replace with your delete icon SVG or use a library like Font Awesome */
+            width: 1rem;
+            height: 1rem;
+            stroke: currentColor;
+            stroke-width: 2;
+            fill: none;
+        }
+
+        .save-icon{
+          width: 1rem;
+          height: 1rem;
+          stroke: currentColor;
+          stroke-width: 2;
+          fill: none;
+        }
+
+        .cancel-icon{
+          width: 1rem;
+          height: 1rem;
+          stroke: currentColor;
+          stroke-width: 2;
+          fill: none;
+        }
+
+        .message.editing {
+            background-color: #374151;
+            border: 2px solid #93c5fd;
+            animation: none;
+        }
+
+        .message.editing .message-content {
+            display: none;
+        }
+
+        .message.editing .edit-input {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 8px;
+            border: 1px solid #93c5fd;
+            background-color: #2d3748;
+            color: #f7fafc;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            outline: none;
+            animation: fadeInInput 0.3s ease-out;
+        }
+        @keyframes fadeInInput{
+          from { opacity: 0; transform: scale(0.95); }
+          to { opacity: 1; transform: scale(1); }
+        }
+
+        .message.editing .message-actions {
+            display: none;
+        }

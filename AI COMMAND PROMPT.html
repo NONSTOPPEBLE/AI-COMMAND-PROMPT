@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Command Prompt</title>
+    <meta name="author" content="Vatsal Gavit">
+    <meta name="developer" content="Vatsal Gavit">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AI Command Prompt</h1>
+    </header>
+
+    <main>
+        <div id="chat-container">
+            <div class="message system-message">Welcome! How can I assist you today?</div>
+            <div id="suggestion-box">
+            </div>
+            <button id="settings-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-2"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16z"/><path d="M12 10v2"/><path d="M12 14v2"/><path d="M12 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M6.343 17.657 4.929 16.243"/><path d="M19.071 4.929 17.657 6.343"/><path d="M7.757 6.343 6.343 4.929"/><path d="M19.071 16.243 17.657 17.657"/></svg>
+            </button>
+            <div id="settings-panel">
+                <h2>Settings</h2>
+                <div class="setting-group">
+                    <label for="api-key">API Key</label>
+                    <input type="text" id="api-key" placeholder="Enteryour API key" value="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">
+                </div>
+                <div class="setting-group">
+                    <label for="model-engine">Model Engine</label>
+                    <select id="model-engine">
+                        <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                        <option value="gpt-4">GPT-4</option>
+                        <option value="text-davinci-003">Text Davinci 003</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label for="max-tokens">Max Tokens</label>
+                    <input type="number" id="max-tokens" value="200" min="1" step="10">
+                </div>
+                <button id="save-settings-button">Save Settings</button>
+                <button id="clear-chat-button">Clear Chat</button>
+            </div>
+        </div>
+        <div id="input-container">
+            <input type="text" id="message-input" placeholder="Type your message..." />
+            <button id="send-button">Send</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AI Command Prompt | Author: Vatsal Gavit | Developer: Vatsal Gavit</p>
+    </footer>
+<script src="js/vatsal.js"></script>
+</body>
+</html>
