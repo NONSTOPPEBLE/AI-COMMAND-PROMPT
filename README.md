@@ -160,11 +160,7 @@ Feel free to use, modify, and share with credit.
 ---
 
 > ⭐ If you like this project, give it a ⭐ on GitHub and share it with friends!
-```
 
----
-
-### 💡 Things to Update:
 1. **GitHub Links**: Replace `your-username` with your GitHub username.
 2. **Contact Info**: Add your email and LinkedIn links.
 3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
