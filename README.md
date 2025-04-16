@@ -1,4 +1,3 @@
-
 # 🤖 **AI Command Prompt**
 
 <p align="center">
@@ -48,7 +47,6 @@
     <img src="https://img.shields.io/badge/Join-Discussion-yellow?style=for-the-badge&logo=github" alt="Discussions">
   </a>
 </p>
-
 
 **AI Command Prompt** is an AI-powered chatbot developed using OpenAI's GPT models. It supports 22 Indian languages and provides an intuitive interface for interacting with the AI. Users can edit, delete, and customize settings for a personalized chat experience.
 
@@ -121,7 +119,6 @@ ai-command-prompt/
 │   └── screenscriptbyvatsal.js  # Additional JS logic (if any)
 ├── README.md                 # Documentation file
 └── LICENSE                   # Project license (MIT or other)
-
 ```
 
 ---
@@ -205,8 +202,26 @@ Try the live demo at:
 ---
 
 ## 👤 **Author**
-<table> <tr> <td><strong>Vatsal Gavit</strong></td> </tr> <tr> <td>📍 Dang, Gujarat, India</td> </tr> <tr> <td>📧 Email: <code>vatsalgame28@gmail.com</code></td> </tr> <tr> <td> <a href="https://www.linkedin.com/in/vatsal-gavit-787608274"> <img src="https://img.shields.io/badge/LinkedIn-@VATSAL--GAVIT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="https://github.com/NONSTOPPEBLE"> <img src="https://img.shields.io/badge/GitHub-@NONSTOPPEBLE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> <a href="https://www.instagram.com/vatsal_.x.09_/"> <img src="https://img.shields.io/badge/Instagram-@vatsal_.x.09_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"> </a> </td> </tr> </table>
----
+
+### **Vatsal Gavit**
+📍 *Dang, Gujarat, India*  
+📧 *Email*: [vatsalgame28@gmail.com](mailto:vatsalgame28@gmail.com)  
+
+### Connect with Me:
+<p align="center">
+  <a href="https://www.linkedin.com/in/vatsal-gavit-787608274" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-@VATSAL--GAVIT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-@NONSTOPPEBLE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://www.instagram.com/vatsal_.x.09_/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-@vatsal_.x.09_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="mailto:vatsalgame28@gmail.com">
+    <img src="https://img.shields.io/badge/Email-📧-0077B5?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</p>
 
 ## 📄 **License**
 
@@ -224,3 +239,4 @@ Feel free to use, modify, and share with attribution.
 - 🚧 **Under Development**: This project is still in the development phase. Some features may not be fully functional, and there may be bugs or incomplete implementations. We are constantly working on improving it.
 - 💬 **Contributions**: Contributions are welcome! Feel free to fork the repository and submit pull requests.
 ```
+
