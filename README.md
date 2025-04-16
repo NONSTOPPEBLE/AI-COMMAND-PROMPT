@@ -1,56 +1,175 @@
+
 # 🤖 AI Command Prompt
 
-**AI Command Prompt** is a sleek, multilingual chatbot interface powered by **OpenAI's GPT models**. Built using HTML, CSS, and JavaScript, it allows users to interact with AI in **22 Indian languages**, choose model types, edit messages, and more — all within a beautiful, simple UI.
+**AI Command Prompt** is an AI-powered chatbot built with OpenAI's GPT models, supporting 22 Indian languages. It allows users to interact with the AI through a user-friendly interface, featuring editable messages, settings to adjust model parameters, and more. 
 
-> 🌍 Built by **Vatsal Gavit** from Dang, Gujarat, India 🇮🇳
+This project is developed by **Vatsal Gavit**, a student from Dang, Gujarat, India.
 
 ---
 
-## ✨ Features
+## 🌟 Features
 
-- 🌐 Understands 22 Indian languages (text-based)
-- 💬 Chat UI with live responses from OpenAI
-- ⚙️ Settings panel:
+- 🧠 Powered by **OpenAI GPT** models (`gpt-3.5-turbo`, `gpt-4`, `text-davinci-003`)
+- 🌐 Understands **22 Indian languages** (text-based input and output)
+- ✍️ **Edit** or 🗑️ **delete** chat messages
+- ⚙️ Customizable settings:
   - API Key input
-  - Model selector (`gpt-3.5-turbo`, `gpt-4`, etc.)
-  - Max token customization
-- ✏️ Edit / 🗑️ Delete messages directly
-- 📦 Saves settings locally using `localStorage`
-- 🎨 Clean and modern UI (Google Fonts + Lucide Icons)
+  - Select model engine (GPT-3.5, GPT-4, Davinci)
+  - Max token limit adjustment
+- 🎨 Responsive UI with **Lucide Icons** and **Google Fonts**
 
 ---
 
-## 🔐 API Key Instructions
+## 🛠️ Tech Stack
 
-This app uses the **OpenAI API** to fetch responses from GPT models.
-
-### 🧪 Demo Mode
-
-- A **limited demo** version uses a public API key from the developer (Vatsal Gavit).
-- You can test basic functionality using this key.
-- ⚠️ The key is rate-limited and may stop working if abused.
-
-### ✅ For Full Access
-
-To use your own API key:
-
-1. Visit [OpenAI API Keys](https://platform.openai.com/account/api-keys)
-2. Login and click “Create new secret key”
-3. Copy the key
-4. Paste it into the **Settings panel** in the chatbot interface
+- **Frontend**: HTML5, CSS3, JavaScript
+- **AI Model**: OpenAI GPT API
+- **Icons**: Lucide Icons
+- **Fonts**: Google Fonts (Inter)
+- **Data Storage**: LocalStorage for saving settings
 
 ---
 
-## 🧠 Tech Stack
+## 🔐 API Key Usage
 
-- **HTML5 / CSS3 / JavaScript**
-- **OpenAI GPT API** (`gpt-3.5-turbo`, `gpt-4`, `text-davinci-003`)
-- **Lucide Icons** (SVG UI icons)
-- **Google Fonts – Inter**
-- **Vanilla JS DOM manipulation**
+To interact with the AI, you need an **OpenAI API key**. 
+
+### Demo Mode
+
+- The **live demo** uses a public API key (limited access).
+- You can test it on the demo website.
+- ⚠️ Please note that the public API key is **rate-limited**.
+
+### Use Your Own API Key
+
+1. **Go to [OpenAI API Keys](https://platform.openai.com/account/api-keys)**
+2. Log in or create an account.
+3. Click **Create new secret key** and copy the key.
+4. **Paste the key** into the **Settings panel** in the app.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-ai-command-prompt/ ├── index.html # Main UI ├── style.css # Stylesheet ├── vatsal.js # Chat logic & API integration ├── README.md # This file
+```
+ai-command-prompt/
+├── index.html          # Main HTML file
+├── style.css           # Custom styles
+├── splash-screen.css   # Splash screen styling
+├── vatsal.js           # Main JavaScript logic for chat and settings
+├── screenscriptbyvatsal.js  # Additional JavaScript (if any)
+├── README.md           # Project documentation
+└── screenshots/        # Folder for optional screenshots
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/ai-command-prompt.git
+cd ai-command-prompt
+```
+
+### 2. Open in a Browser
+
+To run the app locally, open the `index.html` file in any modern browser:
+
+```bash
+start index.html
+```
+
+### 3. Add Your OpenAI API Key
+
+- Click the ⚙️ **Settings** button.
+- Enter your **OpenAI API key**.
+- Select your preferred **GPT model** and adjust the **max token** if needed.
+
+---
+
+## 🌍 Live Demo
+
+Try the live demo at:  
+🔗 **[https://your-username.github.io/ai-command-prompt/](https://your-username.github.io/ai-command-prompt/)**
+
+> ⚠️ The demo uses a **public API key** for testing, and it might have some rate limits.
+
+---
+
+## 🖼️ Screenshots
+
+| Chat Interface | Settings Panel |
+|----------------|----------------|
+| ![Chat](screenshots/chat-ui.png) | ![Settings](screenshots/settings.png) |
+
+> *(Upload your screenshots to the `screenshots/` folder if you'd like)*
+
+---
+
+## 💻 How It Works
+
+1. **Chat Interface**: 
+    - Users type in the input field, and the AI responds based on the selected GPT model.
+    - The chat interface allows for **message editing** and **deleting**.
+
+2. **Settings Panel**: 
+    - Users can input their API key, select a model, and adjust settings for tokens.
+    - Settings are stored in **localStorage**, so they persist across sessions.
+
+3. **API Integration**: 
+    - The app communicates with the **OpenAI API** to fetch responses based on user input.
+    - You can configure the app to use different models like `gpt-3.5-turbo`, `gpt-4`, or `text-davinci-003`.
+
+---
+
+## 🔮 Roadmap
+
+- 🎤 **Voice input and output** integration (e.g., using Whisper or Vosk)
+- 🔊 **Text-to-speech** for better interaction
+- 🌑 **Dark mode** support
+- 📶 **Offline mode** with FAQ-like responses
+- 📱 **PWA (Progressive Web App)** support for mobile devices
+
+---
+
+## 🙏 Credits
+
+- [OpenAI API](https://platform.openai.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [Google Fonts - Inter](https://fonts.google.com/specimen/Inter)
+
+---
+
+## 👤 Author
+
+**Vatsal Gavit**  
+📍 Dang, Gujarat, India  
+📧 Email: `your.email@example.com`  
+🔗 LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)  
+🐙 GitHub: [@your-username](https://github.com/your-username)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).  
+Feel free to use, modify, and share with credit.
+
+---
+
+> ⭐ If you like this project, give it a ⭐ on GitHub and share it with friends!
+```
+
+---
+
+### 💡 Things to Update:
+1. **GitHub Links**: Replace `your-username` with your GitHub username.
+2. **Contact Info**: Add your email and LinkedIn links.
+3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
+4. **Live Demo URL**: If you're hosting it, update the demo link to your own hosted version.
+
+---
+
+This `README.md` will be helpful for both users and developers, providing clear instructions and context on the project, its setup, and usage. Let me know if you need any further adjustments!
