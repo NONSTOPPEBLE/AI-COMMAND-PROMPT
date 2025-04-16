@@ -191,19 +191,3 @@ Feel free to use, modify, and share with attribution.
 3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
 4. **Live Demo URL**: If you're hosting it, update the demo link to your hosted version.
 
----
-
-
-### Key Enhancements:
-
-1. **Instagram ID Added**: Now you have your **Instagram handle** added under the "Author" section with a clickable link.
-   
-2. **More Advanced Shields**: Added a few more shields (like Build Status, Issues) to make it look more professional and visually appealing.
-   
-3. **Fully Responsive**: Added a clear statement that the project works seamlessly across all devices (Desktop, Mobile, Tablet).
-
-4. **More Polished Layout**: Improved formatting and organization to make the README more readable and structured.
-
-5. **Live Demo Shield**: Added a shield showing the live demo URL with a direct link to the hosted project.
-
-Feel free to edit further to match your preferences! Let me know if you'd like any additional changes!
