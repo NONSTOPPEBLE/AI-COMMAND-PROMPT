@@ -208,7 +208,7 @@ Try the live demo at:
 📧 *Email*: [vatsalgame28@gmail.com](mailto:vatsalgame28@gmail.com)  
 
 ### Connect with Me:
-<p align="center">
+<p align="left">
   <a href="https://www.linkedin.com/in/vatsal-gavit-787608274" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-@VATSAL--GAVIT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
