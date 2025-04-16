@@ -122,7 +122,7 @@ Try the live demo at:
 
 | Chat Interface | Settings Panel |
 |----------------|----------------|
-| ![Chat](screenshots/chat-ui.png) | ![Settings](screenshots/settings.png) |
+| ![Chat](screenshots/chat interface.png) | ![Settings](screenshots/Screenshot 2025-04-16 092856.png) |
 
 *(Optional: Upload your screenshots to the `screenshots/` folder and update the table above.)*
 
