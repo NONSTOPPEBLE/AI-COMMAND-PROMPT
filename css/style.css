@@ -85,149 +85,187 @@
         * Styles for the chat message area. Includes scrollbar styling.
         */
 
-        #chat-container {
-            border: 1px solid #4a5568;
-            border-radius: 16px;
-            margin-bottom: 2rem;
-            background-color: #2d3748;
-            padding: 1rem;
-            height: 200px;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-            position: relative;
-            scrollbar-width: thin;
-            scrollbar-color: #718096 #2d3748;
-        }
-
-        /* Webkit scrollbar styles (Chrome, Safari, Edge) */
-        #chat-container::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        #chat-container::-webkit-scrollbar-track {
-            background: #2d3748;
-            border-radius: 10px;
-        }
-
-        #chat-container::-webkit-scrollbar-thumb {
-            background-color: #718096;
-            border-radius: 10px;
-            border: 3px solid #2d3748;
-        }
-
-        #chat-container::-webkit-scrollbar-thumb:hover {
-            background-color: #9ca3af;
-        }
-
         /*
-        * Message Styles
-        * -----------------------------------------------------------------------------
-        * Styles for individual chat messages.
-        */
+ * Main Chatbox Layout
+ * -------------------------------------------------------------------------------
+ * Improving the overall chatbox layout and user experience.
+ */
 
-        .message {
-            padding: 1.25rem 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 24px;
-            max-width: 85%;
-            clear: both;
-            opacity: 0;
-            animation: fadeIn 0.3s ease-out forwards, slideIn 0.5s ease-out;
-            position: relative;
-        }
+#chat-container {
+    border: 1px solid #4a5568;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    background-color: #2d3748;
+    padding: 1rem 1.5rem;
+    height: 300px; /* Increased height for better content space */
+    max-height: 80vh; /* Keeps chatbox from overflowing the screen */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for better pop-out effect */
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: #718096 #2d3748;
+    transition: box-shadow 0.3s ease-in-out;
+}
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+/* Smooth transitions for hover and focus states */
+#chat-container:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Subtle shadow increase on hover */
+}
 
-        @keyframes slideIn {
-          from { transform: translateX(-20px); }
-          to { transform: translateX(0); }
-        }
+/* Webkit scrollbar styles (Chrome, Safari, Edge) */
+#chat-container::-webkit-scrollbar {
+    width: 10px;
+}
 
-        .user-message {
-            background: linear-gradient(to right, #a855f7, #f9a8d4);
-            color: #fff;
-            align-self: flex-end;
-            border-bottom-right-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation-delay: 0.2s;
-        }
+#chat-container::-webkit-scrollbar-track {
+    background: #2d3748;
+    border-radius: 10px;
+}
 
-        .system-message {
-            background: linear-gradient(to right, #2075fd, #22e9c8);
-            color: #fff;
-            align-self: flex-start;
-            border-bottom-left-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            animation-delay: 0.2s;
-        }
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: #718096;
+    border-radius: 10px;
+    border: 3px solid #2d3748;
+}
 
-        /*
-        * Input Container Styles
-        * -----------------------------------------------------------------------------
-        * Styles for the message input area.
-        */
+#chat-container::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af;
+}
 
-        #input-container {
-            display: flex;
-            margin-top: 2rem;
-            animation: fadeInUp 1s ease-out;
-        }
+/* Making chat messages more spaced out */
+.message {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 16px; /* More rounded edges */
+    max-width: 80%;
+    clear: both;
+    opacity: 0;
+    animation: fadeIn 0.3s ease-out forwards, slideIn 0.5s ease-out;
+    position: relative;
+}
 
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-        #message-input {
-            flex: 1;
-            padding: 1.25rem;
-            border: none;
-            border-radius: 30px 0 0 30px;
-            margin-right: 0;
-            font-size: 1.1rem;
-            border-right: none;
-            background-color: #374151;
-            color: #f7fafc;
-            transition: border-color 0.2s ease, box-shadow 0.2s ease;
-            animation-delay: 0.4s;
-        }
+@keyframes slideIn {
+    from { transform: translateX(-20px); }
+    to { transform: translateX(0); }
+}
 
-        #message-input:focus {
-            outline: none;
-            border-color: #93c5fd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-            animation: pulseInput 2s infinite alternate;
-        }
+/* User message style */
+.user-message {
+    background: linear-gradient(to right, #a855f7, #f9a8d4);
+    color: #fff;
+    align-self: flex-end;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for user messages */
+    animation-delay: 0.2s;
+}
 
-        @keyframes pulseInput {
-          from { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
-          to { box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); }
-        }
+/* System message style */
+.system-message {
+    background: linear-gradient(to right, #2075fd, #22e9c8);
+    color: #fff;
+    align-self: flex-start;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Softer shadow for system messages */
+    animation-delay: 0.2s;
+}
 
-        #send-button {
-            background: linear-gradient(to right, #f472b6, #8b5cf6);
-            color: #fff;
-            padding: 1.25rem 2.25rem;
-            border: none;
-            border-radius: 0 30px 30px 0;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: background-color 0.2s ease,  box-shadow 0.2s ease;
-            border-left: none;
-            animation: none; /* Removed tiltButton */
-        }
+/* Input area styles */
+#input-container {
+    display: flex;
+    margin-top: 2rem;
+    animation: fadeInUp 1s ease-out;
+}
 
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
-        #send-button:active {
-            background-color: #d946ef;
-            transform: translateY(0);
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-        }
+#message-input {
+    flex: 1;
+    padding: 1.25rem;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    margin-right: 0;
+    font-size: 1.1rem;
+    border-right: none;
+    background-color: #374151;
+    color: #f7fafc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    animation-delay: 0.4s;
+}
+
+/* Focus animation for message input */
+#message-input:focus {
+    outline: none;
+    border-color: #93c5fd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    animation: pulseInput 2s infinite alternate;
+}
+
+/* Input focus animation */
+@keyframes pulseInput {
+    from { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); }
+    to { box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); }
+}
+
+#send-button {
+    background: linear-gradient(to right, #f472b6, #8b5cf6);
+    color: #fff;
+    padding: 1.25rem 2.25rem;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    border-left: none;
+}
+
+#send-button:active {
+    background-color: #d946ef;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    #chat-container {
+        height: auto;
+        max-height: 65vh;
+    }
+
+    main {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    .message {
+        max-width: 95%;
+        border-radius: 16px;
+    }
+
+    #input-container {
+        flex-direction: column;
+    }
+
+    #message-input {
+        border-radius: 16px 16px 0 0;
+        margin-right: 0;
+        border-right: 1px solid #6b7280;
+    }
+
+    #send-button {
+        border-radius: 0 0 16px 16px;
+        border-left: 1px solid #6b7280;
+    }
+}
 
         /*
         * Footer Styles
