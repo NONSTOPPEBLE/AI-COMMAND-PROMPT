@@ -64,13 +64,19 @@ Here’s the folder structure for the project:
 
 ```
 ai-command-prompt/
-├── index.html            # Main HTML file
-├── style.css             # Custom styles for the UI
-├── splash-screen.css     # Styling for the splash screen
-├── vatsal.js             # JavaScript for chat logic and settings
-├── screenscriptbyvatsal.js  # Additional JS logic (if any)
-├── README.md             # Documentation file
-└── screenshots/          # Optional folder for screenshots
+├── index.html                # Splash Screen HTML file
+├── AI COMMAND PROMPT.html    # Main HTML file
+├── assets/                   # Folder for assets like images and icons
+│   └── screenshots/          # Optional folder for screenshots
+├── css/                      # Folder for all CSS files
+│   ├── style.css             # Custom styles for the UI
+│   └── splash-screen.css     # Styling for the splash screen
+├── js/                       # Folder for all JavaScript files
+│   ├── vatsal.js             # JavaScript for chat logic and settings
+│   └── screenscriptbyvatsal.js  # Additional JS logic (if any)
+├── README.md                 # Documentation file
+└── LICENSE                   # Project license (MIT or other)
+
 ```
 
 ---
