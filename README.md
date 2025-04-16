@@ -1,3 +1,4 @@
+
 # 🤖 **AI Command Prompt**
 
 <p align="center">
@@ -204,14 +205,7 @@ Try the live demo at:
 ---
 
 ## 👤 **Author**
-
-**Vatsal Gavit**  
-📍 Dang, Gujarat, India  
-📧 Email: `vatsalgame28@gmail.com`  
-🔗 LinkedIn: [@VATSAL-GAVIT](https://linkedin.com/in/vatsal-gavit-787608274)  
-🐙 GitHub: [@NONSTOPPEBLE](https://github.com/NONSTOPPEBLE)  
-📸 Instagram: [@vatsal_.x.09_](https://www.instagram.com/vatsal_.x.09_/)
-
+<table> <tr> <td><strong>Vatsal Gavit</strong></td> </tr> <tr> <td>📍 Dang, Gujarat, India</td> </tr> <tr> <td>📧 Email: <code>vatsalgame28@gmail.com</code></td> </tr> <tr> <td> <a href="https://www.linkedin.com/in/vatsal-gavit-787608274"> <img src="https://img.shields.io/badge/LinkedIn-@VATSAL--GAVIT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="https://github.com/NONSTOPPEBLE"> <img src="https://img.shields.io/badge/GitHub-@NONSTOPPEBLE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> <a href="https://www.instagram.com/vatsal_.x.09_/"> <img src="https://img.shields.io/badge/Instagram-@vatsal_.x.09_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"> </a> </td> </tr> </table>
 ---
 
 ## 📄 **License**
@@ -229,4 +223,4 @@ Feel free to use, modify, and share with attribution.
 
 - 🚧 **Under Development**: This project is still in the development phase. Some features may not be fully functional, and there may be bugs or incomplete implementations. We are constantly working on improving it.
 - 💬 **Contributions**: Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
+```
