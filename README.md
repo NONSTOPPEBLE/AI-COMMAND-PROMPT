@@ -1,9 +1,52 @@
 # 🤖 **AI Command Prompt**
 
-[![License](https://img.shields.io/github/license/NONSTOPPEBLE/AI-COMMAND-PROMPT)](LICENSE)  
-[![Website](https://img.shields.io/website?url=http%3A%2F%2Fmmtpro.42web.io%2FVATSAL%2520AI%2520RROJECT%2FAI%2520COMMAND%2520PROMPT.html)](http://mmtpro.42web.io/VATSAL%20AI%20RROJECT/AI%20COMMAND%20PROMPT.html)
-[![GitHub Issues](https://img.shields.io/github/issues/NONSTOPPEBLE/AI-COMMAND-PROMPT)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/issues)  
-[![Website](https://img.shields.io/badge/Website-Visit%20Now-brightgreen)](http://mmtpro.42web.io/VATSAL%20AI%20RROJECT/AI%20COMMAND%20PROMPT.html)
+<p align="center">
+  <!-- Main Project Info -->
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge" alt="License">
+  </a>
+  <a href="http://mmtpro.42web.io/VATSAL%20AI%20RROJECT/AI%20COMMAND%20PROMPT.html">
+    <img src="https://img.shields.io/badge/Live-Demo-blueviolet?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT">
+    <img src="https://img.shields.io/github/repo-size/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge" alt="Repo Size">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT">
+    <img src="https://img.shields.io/github/languages/top/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge" alt="Top Language">
+  </a>
+</p>
+
+<p align="center">
+  <!-- GitHub Insights -->
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/stargazers">
+    <img src="https://img.shields.io/github/stars/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/network/members">
+    <img src="https://img.shields.io/github/forks/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge&logo=github" alt="Forks">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/issues">
+    <img src="https://img.shields.io/github/issues/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge&logo=github" alt="Issues">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/commits">
+    <img src="https://img.shields.io/github/last-commit/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge&logo=git" alt="Last Commit">
+  </a>
+</p>
+
+<p align="center">
+  <!-- Build and Contribution -->
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/NONSTOPPEBLE/AI-COMMAND-PROMPT/build.yml?style=for-the-badge&label=BUILD&logo=githubactions&logoColor=white" alt="Build Status">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/NONSTOPPEBLE/AI-COMMAND-PROMPT?style=for-the-badge" alt="Contributors">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/pulls">
+    <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge&logo=gitbook" alt="PRs Welcome">
+  </a>
+  <a href="https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/discussions">
+    <img src="https://img.shields.io/badge/Join-Discussion-yellow?style=for-the-badge&logo=github" alt="Discussions">
+  </a>
+</p>
 
 
 **AI Command Prompt** is an AI-powered chatbot developed using OpenAI's GPT models. It supports 22 Indian languages and provides an intuitive interface for interacting with the AI. Users can edit, delete, and customize settings for a personalized chat experience.
