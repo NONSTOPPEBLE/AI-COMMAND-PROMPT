@@ -53,3 +53,4 @@ To use your own API key:
 
 ## 📂 Project Structure
 
+ai-command-prompt/ ├── index.html # Main UI ├── style.css # Stylesheet ├── vatsal.js # Chat logic & API integration ├── README.md # This file
