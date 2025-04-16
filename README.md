@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/github/license/NONSTOPPEBLE/AI-COMMAND-PROMPT)](LICENSE)  
 [![Build Status](https://img.shields.io/github/workflow/status/NONSTOPPEBLE/AI-COMMAND-PROMPT/build)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/actions)  
 [![GitHub Issues](https://img.shields.io/github/issues/NONSTOPPEBLE/AI-COMMAND-PROMPT)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/issues)  
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fyour-username.github.io%2Fai-command-prompt)](https://your-username.github.io/ai-command-prompt)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fmmtpro.42web.io%2FVATSAL%20AI%20RROJECT%2FAI%20COMMAND%20PROMPT.html)](http://mmtpro.42web.io/VATSAL%20AI%20RROJECT/AI%20COMMAND%20PROMPT.html)
 
 **AI Command Prompt** is an AI-powered chatbot developed using OpenAI's GPT models. It supports 22 Indian languages and provides an intuitive interface for interacting with the AI. Users can edit, delete, and customize settings for a personalized chat experience.
 
