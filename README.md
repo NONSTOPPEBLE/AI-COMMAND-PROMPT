@@ -182,12 +182,3 @@ Feel free to use, modify, and share with attribution.
 - 🚧 **Under Development**: This project is still in the development phase. Some features may not be fully functional, and there may be bugs or incomplete implementations. We are constantly working on improving it.
 - 💬 **Contributions**: Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
----
-
-### **Things to Update:**
-
-1. **GitHub Links**: Replace `your-username` with your GitHub username.
-2. **Contact Info**: Add your email and LinkedIn links.
-3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
-4. **Live Demo URL**: If you're hosting it, update the demo link to your hosted version.
-
