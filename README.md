@@ -147,7 +147,7 @@ Try the live demo at:
 **Vatsal Gavit**  
 📍 Dang, Gujarat, India  
 📧 Email: `vatsalgame28@gmail.com`  
-🔗 LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)  
+🔗 LinkedIn: [@VATSAL-GAVIT](https://linkedin.com/in/vatsal-gavit-787608274)  
 🐙 GitHub: [@AI-COMMAND-PROMPT](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT)
 
 ---
