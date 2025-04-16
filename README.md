@@ -124,8 +124,6 @@ Try the live demo at:
 |----------------|----------------|
 | ![Chat](screenshots/chat-interface.png) | ![Settings](screenshots/setting-panel.png) |
 
-*(Optional: Upload your screenshots to the `screenshots/` folder and update the table above.)*
-
 ---
 
 ## 💻 **How It Works**
