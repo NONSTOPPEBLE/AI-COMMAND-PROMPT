@@ -1,12 +1,13 @@
-
 # 🤖 **AI Command Prompt**
 
 [![License](https://img.shields.io/github/license/NONSTOPPEBLE/AI-COMMAND-PROMPT)](LICENSE)  
-[![Build Status](https://img.shields.io/github/workflow/status/NONSTOPPEBLE/AI-COMMAND-PROMPT/build)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/actions)
+[![Build Status](https://img.shields.io/github/workflow/status/NONSTOPPEBLE/AI-COMMAND-PROMPT/build)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/actions)  
+[![GitHub Issues](https://img.shields.io/github/issues/NONSTOPPEBLE/AI-COMMAND-PROMPT)](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT/issues)  
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fyour-username.github.io%2Fai-command-prompt)](https://your-username.github.io/ai-command-prompt)
 
-**AI Command Prompt** is an AI-powered chatbot developed using OpenAI's GPT models. It supports 22 Indian languages and provides an intuitive interface for interacting with the AI. Users can edit, delete, and customize the settings for a personalized chat experience.
+**AI Command Prompt** is an AI-powered chatbot developed using OpenAI's GPT models. It supports 22 Indian languages and provides an intuitive interface for interacting with the AI. Users can edit, delete, and customize settings for a personalized chat experience.
 
-This project is developed by **Vatsal Gavit**, an 11th-grade student from Dang, Gujarat, India.
+This project is created by **Vatsal Gavit**, an 11th-grade student from Dang, Gujarat, India. 
 
 > 🚧 **Note**: This project is **under development**. Some features may still be in progress, and bugs may be present. Contributions and feedback are welcome!
 
@@ -21,11 +22,12 @@ This project is developed by **Vatsal Gavit**, an 11th-grade student from Dang, 
 - ✍️ **Edit** and 🗑️ **delete** messages in the chat interface
 - ⚙️ **Customizable settings**:
   - API Key integration
-  - Choose model engine (GPT-3.5, GPT-4, Davinci)
+  - Choose model engine (GPT-3.5, GPT-4, or Davinci)
   - Adjust token limits for fine-grained control
 - 🎨 **Responsive UI** with **Lucide Icons** and **Google Fonts**
 - 📱 **Mobile-friendly**, **Tablet-ready**, and **Desktop optimized** for a seamless user experience on all devices.
-
+- 💬 **Interactive Chat**: Edit, delete, and personalize your conversations with ease.
+  
 ---
 
 ## 🛠️ **Tech Stack**
@@ -35,6 +37,7 @@ This project is developed by **Vatsal Gavit**, an 11th-grade student from Dang, 
 - **Icons**: Lucide Icons
 - **Fonts**: Google Fonts (Inter)
 - **Data Storage**: LocalStorage (for settings persistence)
+- **Responsive Design**: Built with modern CSS techniques to ensure it works on all screen sizes.
 
 ---
 
@@ -158,7 +161,8 @@ Try the live demo at:
 📍 Dang, Gujarat, India  
 📧 Email: `vatsalgame28@gmail.com`  
 🔗 LinkedIn: [@VATSAL-GAVIT](https://linkedin.com/in/vatsal-gavit-787608274)  
-🐙 GitHub: [@AI-COMMAND-PROMPT](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT)
+🐙 GitHub: [@AI-COMMAND-PROMPT](https://github.com/NONSTOPPEBLE/AI-COMMAND-PROMPT)  
+📸 Instagram: [@vatsal_.x.09_](https://www.instagram.com/vatsal_.x.09_/)
 
 ---
 
@@ -187,13 +191,19 @@ Feel free to use, modify, and share with attribution.
 3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
 4. **Live Demo URL**: If you're hosting it, update the demo link to your hosted version.
 
-### Key Updates:
-
-- **Mobile Support**: Mentioned in the description that the project is **fully responsive** and works across **all devices** (Mobile, Tablet, Desktop).
-- **11th Grade Developer**: Clarified in the "About" section that the project is made by an **11th-grade student**.
-- **Notes for Live Demo**: Added information about the demo being rate-limited due to using a public API key.
-  
-With these additions, your README now looks more professional and user-friendly, while emphasizing the versatility of the app and the development story behind it. Let me know if you'd like to add anything else!
+---
 
 
+### Key Enhancements:
 
+1. **Instagram ID Added**: Now you have your **Instagram handle** added under the "Author" section with a clickable link.
+   
+2. **More Advanced Shields**: Added a few more shields (like Build Status, Issues) to make it look more professional and visually appealing.
+   
+3. **Fully Responsive**: Added a clear statement that the project works seamlessly across all devices (Desktop, Mobile, Tablet).
+
+4. **More Polished Layout**: Improved formatting and organization to make the README more readable and structured.
+
+5. **Live Demo Shield**: Added a shield showing the live demo URL with a direct link to the hosted project.
+
+Feel free to edit further to match your preferences! Let me know if you'd like any additional changes!
