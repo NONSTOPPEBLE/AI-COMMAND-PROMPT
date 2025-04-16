@@ -187,10 +187,13 @@ Feel free to use, modify, and share with attribution.
 3. **Screenshots**: Optionally, upload your screenshots in the `screenshots/` folder and update the table above.
 4. **Live Demo URL**: If you're hosting it, update the demo link to your hosted version.
 
----
+### Key Updates:
 
 - **Mobile Support**: Mentioned in the description that the project is **fully responsive** and works across **all devices** (Mobile, Tablet, Desktop).
 - **11th Grade Developer**: Clarified in the "About" section that the project is made by an **11th-grade student**.
 - **Notes for Live Demo**: Added information about the demo being rate-limited due to using a public API key.
   
 With these additions, your README now looks more professional and user-friendly, while emphasizing the versatility of the app and the development story behind it. Let me know if you'd like to add anything else!
+
+
+
