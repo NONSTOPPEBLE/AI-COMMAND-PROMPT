@@ -188,9 +188,6 @@ Feel free to use, modify, and share with attribution.
 4. **Live Demo URL**: If you're hosting it, update the demo link to your hosted version.
 
 ---
-```
-
-### Key Updates:
 
 - **Mobile Support**: Mentioned in the description that the project is **fully responsive** and works across **all devices** (Mobile, Tablet, Desktop).
 - **11th Grade Developer**: Clarified in the "About" section that the project is made by an **11th-grade student**.
