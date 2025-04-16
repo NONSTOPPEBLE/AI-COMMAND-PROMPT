@@ -112,7 +112,7 @@ start index.html
 ## 🌍 **Live Demo**
 
 Try the live demo at:  
-🔗 **[AI Command Prompt Live Demo](https://your-username.github.io/ai-command-prompt/)**
+🔗 **[AI Command Prompt Live Demo](http://mmtpro.42web.io/VATSAL%20AI%20RROJECT/)**
 
 > ⚠️ The demo uses a **public API key** with limited access and may be rate-limited.
 
