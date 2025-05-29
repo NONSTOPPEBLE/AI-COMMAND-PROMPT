@@ -216,7 +216,7 @@ Try the live demo at:
     <img src="https://img.shields.io/badge/GitHub-@NONSTOPPEBLE-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
   </a>
   <a href="https://www.instagram.com/vatsal.gavitt/" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-@vatsal_.x.09_-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+    <img src="https://img.shields.io/badge/Instagram-@vatsal.gavitt-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
   <a href="mailto:vatsalgame28@gmail.com">
     <img src="https://img.shields.io/badge/Email-📧-0077B5?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
